@@ -1,0 +1,18 @@
+<svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="480" fill="#09090B"/>
+  <ellipse cx="240" cy="422" rx="120" ry="20" fill="#000000" fill-opacity="0.45"/>
+  <rect x="192" y="90" width="96" height="42" rx="8" fill="#191D25"/>
+  <rect x="160" y="128" width="160" height="238" rx="28" fill="url(#paint0_linear)"/>
+  <rect x="170" y="178" width="140" height="122" rx="12" fill="#12131A"/>
+  <rect x="170" y="176" width="6" height="122" fill="#00D4FF"/>
+  <rect x="304" y="176" width="6" height="122" fill="#7A00FF"/>
+  <text x="240" y="220" fill="#EBF6FF" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="700">RESEARCH</text>
+  <text x="240" y="248" fill="#B5C6DA" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="14">LABORATORY USE</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="160" y1="128" x2="320" y2="366" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151821"/>
+      <stop offset="0.5" stop-color="#232738"/>
+      <stop offset="1" stop-color="#12141A"/>
+    </linearGradient>
+  </defs>
+</svg>
