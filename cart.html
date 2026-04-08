@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Trutide Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="cart-page">
+    <div class="cart-bg" aria-hidden="true">
+      <div class="hero-scene">
+        <div class="scene-grid"></div>
+        <div class="scene-orb"></div>
+        <div class="scene-ring ring-a">
+          <span class="ring-dot"></span>
+        </div>
+        <div class="scene-ring ring-b">
+          <span class="ring-dot"></span>
+        </div>
+        <div class="scene-ring ring-c">
+          <span class="ring-dot"></span>
+        </div>
+        <div class="dna-strand dna-left"></div>
+        <div class="dna-glow dna-left-glow"></div>
+        <div class="dna-strand dna-right"></div>
+        <div class="dna-glow dna-right-glow"></div>
+        <div class="scene-particles" id="sceneParticles"></div>
+        <div class="scene-vignette"></div>
+      </div>
+    </div>
+    <nav class="nav container cart-nav">
+      <a class="cart-link" href="index.html">← Continue Shopping</a>
+      <div class="logo-wrap">
+        <img src="assets/logo/trutide-labs-logo.png" alt="Trutide Labs logo" class="logo-image" />
+        <div class="logo">TRUTIDE LABS</div>
+      </div>
+      <a class="cart-link" href="cart.html">🛒 Cart <span id="cartCount" class="cart-count">0</span></a>
+    </nav>
+
+    <main class="cart-main container">
+      <h1>Cart & Checkout Inquiry</h1>
+      <div class="cart-layout">
+        <section class="cart-panel">
+          <h2>Cart Items</h2>
+          <div id="cartItems"></div>
+        </section>
+
+        <section class="cart-panel cart-panel-checkout">
+          <h2>Complete your order and earn 50 points for a discount on a future purchase</h2>
+          <p class="hero-sub cart-checkout-lead">All transactions are secure and encrypted.</p>
+          <div id="checkoutItemsPreview" class="checkout-items-preview" hidden></div>
+          <p><strong>Total:</strong> <span id="cartTotal">$0.00</span></p>
+          <form class="checkout-form" id="checkoutForm">
+            <h3>Information</h3>
+            <p class="checkout-copy">Already have an account with us? Log in.</p>
+            <input id="email" type="email" required placeholder="Email address" />
+
+            <label class="checkbox-row">
+              <input type="checkbox" id="createAccount" />
+              Create ONYX BIOLABS shopping account.
+            </label>
+
+            <h3>Shipping address</h3>
+            <div class="checkout-grid-2">
+              <input id="firstName" required placeholder="First name" />
+              <input id="lastName" required placeholder="Last name" />
+            </div>
+            <input id="address1" required placeholder="Street address" />
+            <input id="address2" placeholder="Add Address Line 2 (optional)" />
+            <div class="checkout-grid-3">
+              <input id="country" value="United States (US)" />
+              <input id="zip" required placeholder="ZIP Code" />
+              <input id="state" required placeholder="State" value="North Carolina" />
+            </div>
+            <div class="checkout-grid-2">
+              <input id="city" required placeholder="Town / City" />
+              <input id="phone" placeholder="Phone (optional)" />
+            </div>
+
+            <h3>Shipping method</h3>
+            <label class="radio-row">
+              <input type="radio" name="shippingMethod" value="Standard Shipping - $11.99" checked />
+              Standard Shipping - $11.99
+            </label>
+            <label class="radio-row">
+              <input type="radio" name="shippingMethod" value="Expedited Insured Shipping - $19.99" />
+              Expedited Insured Shipping - $19.99
+            </label>
+
+            <h3>Payment</h3>
+            <label class="radio-row">
+              <input type="radio" name="paymentMethod" value="Credit/Debit Card - VISA, MC, and AMEX" checked />
+              Credit/Debit Card - VISA, MC, and AMEX
+            </label>
+            <label class="radio-row">
+              <input type="radio" name="paymentMethod" value="Cash App" />
+              Cash App
+            </label>
+            <label class="radio-row">
+              <input type="radio" name="paymentMethod" value="Zelle (5% Additional Discount)" />
+              Zelle (5% Additional Discount)
+            </label>
+
+            <h3>Billing address</h3>
+            <label class="radio-row">
+              <input type="radio" name="billingAddress" value="Same as shipping address" checked />
+              Same as shipping address
+            </label>
+            <label class="radio-row">
+              <input type="radio" name="billingAddress" value="Use a different billing address" />
+              Use a different billing address
+            </label>
+
+            <label class="checkbox-row">
+              <input type="checkbox" id="offersOptIn" />
+              Email me with news and offers (optional)
+            </label>
+            <label class="checkbox-row">
+              <input type="checkbox" id="termsAccepted" required />
+              I have read and agree to the website terms and conditions
+            </label>
+
+            <textarea id="notes" rows="4" placeholder="Order notes (optional)"></textarea>
+            <button class="btn btn-primary" type="submit">Complete Order</button>
+          </form>
+          <div class="checkout-copy trust-copy">
+            <h3>The Onyx Standard</h3>
+            <p><strong>99%+ Purity Guaranteed</strong> - HPLC tested to ensure maximum consistency and research quality.</p>
+            <p><strong>Secure Payment</strong> - Your transaction is protected with 256-bit SSL encryption.</p>
+            <p><strong>Discreet Shipping</strong> - Plain, unmarked packaging for complete privacy on all orders. Free Shipping on all orders over $200.</p>
+            <p>Copyright © 2026, trutidelabs. All rights reserved.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="assets/bottles/bottle-images.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trutide Labs | Research Brand</title>
+    <meta
+      name="description"
+      content="Trutide Labs is a research brand focused on precision, quality, and secure handling standards."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="gate-overlay" id="ageGate" aria-modal="true" role="dialog">
+      <div class="gate-card">
+        <p class="gate-kicker">Restricted Access</p>
+        <h2>Research Access Confirmation</h2>
+        <p>By entering Trutide Labs, you confirm that:</p>
+        <ul>
+          <li>You are 21 years of age or older</li>
+          <li>All products are for research and laboratory contexts only</li>
+          <li>You will not use any listing for human consumption</li>
+          <li>You accept responsibility for legal and safe handling</li>
+        </ul>
+        <div class="gate-actions">
+          <button id="agreeBtn" class="btn btn-primary">I Agree & Enter</button>
+          <button id="exitBtn" class="btn btn-secondary">Exit Site</button>
+        </div>
+      </div>
+    </div>
+
+    <header class="hero" id="top">
+      <div class="hero-scene" aria-hidden="true">
+        <div class="scene-grid"></div>
+        <div class="scene-orb"></div>
+        <div class="scene-ring ring-a">
+          <span class="ring-dot"></span>
+        </div>
+        <div class="scene-ring ring-b">
+          <span class="ring-dot"></span>
+        </div>
+        <div class="scene-ring ring-c">
+          <span class="ring-dot"></span>
+        </div>
+        <div class="dna-strand dna-left"></div>
+        <div class="dna-glow dna-left-glow"></div>
+        <div class="dna-strand dna-right"></div>
+        <div class="dna-glow dna-right-glow"></div>
+        <div class="scene-particles" id="sceneParticles"></div>
+        <div class="scene-vignette"></div>
+      </div>
+      <nav class="nav nav-spread" aria-label="Main navigation">
+        <a href="#top" class="nav-brand">
+          <img src="assets/logo/trutide-labs-logo.png" alt="Trutide Labs logo" class="logo-image" />
+          <span class="logo">TRUTIDE LABS</span>
+        </a>
+        <a href="#catalog" class="nav-link-item">Research Peptides</a>
+        <a href="#top" class="nav-link-item">Home</a>
+        <a href="#catalog" class="nav-link-item">Shop</a>
+        <a href="#lab-results" class="nav-link-item">Lab Results</a>
+        <a href="#track-order" class="nav-link-item">Track Order</a>
+        <a href="#about" class="nav-link-item">About Us</a>
+        <a href="#contact" class="nav-link-item">Contact</a>
+        <a href="#affiliates" class="nav-link-item">Affiliates</a>
+        <button id="cartToggle" class="cart-link" type="button" aria-label="Open cart drawer">
+          🛒 Cart <span id="cartCount" class="cart-count">0</span>
+        </button>
+      </nav>
+      <div class="hero-content container">
+        <p class="kicker">Elite Research Compounds</p>
+        <h1>TRUTIDE LABS</h1>
+        <p class="hero-lead">
+          Elite Research Compounds. Precision Without Compromise.
+        </p>
+        <p class="hero-sub">
+          High-purity peptides engineered for advanced research applications.
+          Verified quality. Secure handling. Next-level consistency.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalog" class="btn btn-primary">Start Shopping</a>
+          <a href="#catalog" class="btn btn-outline">Explore Catalog</a>
+          <a href="#contact" class="btn btn-secondary">Contact Lab Team</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="catalog">
+        <div class="section-head">
+          <h2>Research Catalog</h2>
+          <p>Choose a listing, select mg/size, then add to cart.</p>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="section story container" id="about">
+        <h2>Brand Story</h2>
+        <p>
+          At Trutide Labs, we operate at the intersection of science, precision,
+          and performance. Our compounds are sourced and handled with strict
+          quality standards, ensuring researchers receive only high-purity
+          materials for compliant laboratory use.
+        </p>
+        <p>
+          Built for teams that demand more accuracy, more consistency, and more
+          reliable data outcomes.
+        </p>
+      </section>
+
+      <section class="section container savings">
+        <h2>Volume Savings</h2>
+        <div class="savings-grid">
+          <article class="save-card">
+            <h3>Moderate</h3>
+            <p>2 - 5 Vials</p>
+            <strong>Save 5%</strong>
+          </article>
+          <article class="save-card">
+            <h3>Advanced</h3>
+            <p>6 - 10 Vials</p>
+            <strong>Save 10%</strong>
+          </article>
+          <article class="save-card">
+            <h3>Elite Research</h3>
+            <p>11+ Vials</p>
+            <strong>Save 20%</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section trust">
+        <div class="container trust-grid">
+          <div>99%+ Purity Standards</div>
+          <div>Fast & Discreet Shipping</div>
+          <div>Secure Checkout Infrastructure</div>
+          <div>Research-Grade Handling Only</div>
+        </div>
+      </section>
+
+      <section class="section cta container" id="contact">
+        <h2>Precision Starts Here</h2>
+        <p>
+          Join research teams who demand elite-grade compounds and
+          uncompromising quality standards.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:contact@trutidelabs.com"
+            >Request Catalog Access</a
+          >
+          <a class="btn btn-outline" href="mailto:contact@trutidelabs.com"
+            >Create Account Inquiry</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Trutide Labs products are intended strictly for laboratory research
+          purposes only. Not for human consumption. By contacting or requesting
+          catalog information, you confirm compliance with all applicable laws
+          and regulations.
+        </p>
+      </div>
+    </footer>
+
+    <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+      <div class="cart-drawer-header">
+        <h3>Your Cart</h3>
+        <button id="closeCartDrawer" class="close-btn" aria-label="Close cart">×</button>
+      </div>
+      <div id="drawerItems" class="drawer-items"></div>
+      <div class="drawer-footer">
+        <p><strong>Subtotal:</strong> <span id="drawerSubtotal">$0.00</span></p>
+        <div class="qv-actions">
+          <a class="btn btn-secondary" href="cart.html">View cart</a>
+          <a class="btn btn-primary" href="cart.html">Checkout</a>
+        </div>
+      </div>
+    </aside>
+    <div id="drawerBackdrop" class="drawer-backdrop" hidden></div>
+
+    <dialog class="quick-view" id="quickView">
+      <button class="close-btn" id="closeQuickView" aria-label="Close">
+        ×
+      </button>
+      <h3 id="qvName"></h3>
+      <p id="qvCategory"></p>
+      <label for="variantSelect">Choose mg/size</label>
+      <select id="variantSelect"></select>
+      <p class="qv-price">Price: <span id="qvPrice"></span></p>
+      <div class="qv-actions">
+        <a id="qvDetails" class="btn btn-secondary" href="#">View Details</a>
+        <button id="qvAddToCart" class="btn btn-primary">Add to Cart</button>
+      </div>
+      <p class="qv-note">
+        Cart checkout is configured as a compliance inquiry workflow.
+      </p>
+    </dialog>
+
+    <script src="assets/bottles/bottle-images.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
